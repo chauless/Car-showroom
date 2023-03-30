@@ -1,0 +1,272 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.bold {
+	font-weight: bold;
+	font-size: 30px;
+}
+
+
+/*              */
+
+
+body {
+	margin: 0;
+	font-family: 'Lexend', sans-serif;
+	min-width: 900px;
+}
+
+body a {
+	color: black;
+	text-decoration: none;
+}
+
+a:active {
+	color: #000;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #800000;
+}
+
+h2 {
+	padding-top: 20px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.ad {
+	width: 1100px;
+}
+
+.ad .photo {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	border: black solid 2px;
+	border-radius: 15px;
+}
+
+.ad img {
+	width: 110%;
+	height: 110%;
+	object-fit: cover;
+}
+
+.name, .price, .year, .milage { float: left; width: 300px; }
+
+main {
+	padding-left: 150px;
+	padding-right: 150px;
+	display: flex;
+	flex-direction: row;
+}
+
+.name {
+	margin-bottom: 20px;
+}
+
+.additionalInfo {
+	margin-bottom: 20px;
+}
+
+.year {
+	margin-bottom: 20px;
+}
+
+.milage {
+	margin-bottom: 20px;
+}
+
+.filters {
+	display: flex;
+	justify-content: space-between;
+	font-size: 24px;
+}
+
+.description {
+	display: flex;
+	justify-content: space-between;
+	font-size: 24px;
+}
+
+.filters a {
+	display: flex;
+	align-items: center;
+}
+
+.filters img {
+	background: lightgray;
+	padding: 10px;
+	border-radius: 15px
+}
+
+.name {
+	padding-right: 70px;
+}
+
+.price {
+	padding-right: 70px;
+}
+
+.year {
+	padding-right: 70px;
+}
+
+main {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.ad {
+	padding-top: 30px;
+	padding-bottom: 5px;
+}
+
+.pagelist {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 22px;
+	margin: 30px 0;
+}
+
+.pagebutton {
+	padding: 10px;
+	margin: 0 10px;
+	text-decoration: none;
+}
+
+.photo1 {
+	padding-right: 90px;
+	font-color: white;
+}
+
+.filters img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.delete {
+	color: #DB3727;
+}
+
+.new_ad {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 22px;
+	margin: 30px 0;
+	padding: 10px;
+	background: #36B555;
+	border-radius: 15px;
+}
+
+.active {
+	border-color: green;
+	border: 5px solid;
+}
+
+@media print {
+	.ad img, .auth, .nav, .filters {
+		display: none;
+	}
+	body {
+		margin: 100px;
+	}
+
+	.ad {
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+@media screen and (max-width: 1240px) {
+	.ad, .description {
+		font-size: 18px;
+	}
+	.additionalInfo {
+		font-size: 14px;
+	}
+}
+
+
+@media screen and (max-width: 1120px) {
+	.ad {
+		width: 800px;
+	}
+	.milage {
+		display: none;
+	}
+	.additionalInfo {
+		font-size: 14px;
+	}
+	.filters {
+		display: flex;
+		justify-content: left;
+	}
+	.filters img {
+		height: 40px;
+		width: 40px;
+	}
+	.filters a {
+		padding-right: 20px;
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 1045px) {
+	.description {
+		flex-direction: column ;
+	}
+	.name {
+		max-width: 250px;
+	}
+	.price, .name {
+		font-weight: bold;
+	}
+	.color {
+		display: none;
+	}
+	.pagelist {
+		justify-content: left;
+		padding-left: 30px;
+	}
+
+	.profile-btn {
+		display: flex;
+		justify-content: left;
+		flex-direction: column;
+		padding: 0px;
+		margin: 0px;
+	}
+}

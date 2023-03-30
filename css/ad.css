@@ -1,0 +1,159 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/*              */
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+    color: #800000;
+}
+
+body {
+	margin: 0;
+	font-family: 'Lexend', sans-serif;
+	min-width: 900px;
+}
+
+main {
+	padding-left: 150px;
+	padding-right: 150px;
+	margin-top: 35px;
+}
+
+.photo {
+	object-fit: cover;
+	width: 600px;
+	height: 500px;
+	float: right;
+	margin-right: 250px;
+	margin-left: 30px;
+	border: 2px solid #000000;
+}
+
+.parametrs {
+	display: flex;
+	flex-direction: row;
+	margin-top: 30px;
+	font-size: 18px;
+	line-height: 40px;
+}
+
+.name {
+	font-weight: 200;
+	line-height: 40px;
+	color: gray;
+}
+
+.data {
+	margin-left: 30px;
+	font-weight: 400;
+}
+
+.text {
+	margin-top: 30px;
+	max-width: 700px;
+}
+
+.contacts {
+	font-size: 18px;
+	padding: 8px;
+	background: #36B555;
+	border-radius: 15px;
+	margin-top: 20px;
+	margin-right: 80%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+@media print {
+	.print-doc {
+		display: none;
+	}
+	body {
+		width: auto;
+		height: auto;
+		margin: 0;
+		padding: 0;
+	}
+	.photo {
+		width: 350px;
+		height: 350px;
+	}
+}
+
+@media screen and (max-width: 1450px) {
+	.photo {
+		width: 40%;
+		height: 80%;
+	}
+}
+
+@media screen and (max-width: 1080px) {
+	.photo {
+		height: 40%;
+		margin-right: 100px;
+	}
+	.parametrs {
+		font-size: 16px;
+	}
+	.contacts {
+		width: 200px;
+	}
+	.text {
+		max-width: 500px;
+	}
+}
+
+@media screen and (max-width: 630px) {
+	.parametrs {
+		font-size: 16px;
+	}
+	.text {
+		width: 300px;
+	}
+	.photo {
+		min-width: 120%;
+		min-height: 120%;
+		margin-right: 100px;
+	}
+	body {
+		min-width: 100px;
+	}
+	main {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+	.contacts {
+		margin-bottom: 30px;
+	}
+}
+

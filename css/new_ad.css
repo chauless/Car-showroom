@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lexend', sans-serif;
+    background: #F2F2F2;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    padding: 70px;
+    border-radius: 25px;
+    background: white;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 15px;
+}
+
+input[type = 'radio'] {
+    margin: 0px;
+}
+
+input[type = 'submit'] {
+    padding: 10px;
+    margin: 20px;
+}
+
+h2 {
+    margin: 15px 0;
+}
+
+.register {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+select {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+textarea {
+    height: 100px;
+    max-width: 500px;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.button {
+    padding: 10px;
+    margin: 20px;
+    font-size: 20px;
+    border-radius: 15px;
+    background: #F2F2F2;
+    cursor: pointer;
+}
+
+.msg {
+    border: 2px solid #ffa908;
+    border-radius: 3px;
+    padding: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.msg-small {
+    border: 2px solid #ffa908;
+    border-radius: 2px;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+input[type = 'email']:valid, input[type = 'password']:valid {
+    border: 2px solid green;
+}
+
+.invalid {
+    border-color: red;
+}
+
+.valid {
+    border-color: green;
+}
+
+.msg-js {
+    color: red;
+    padding-bottom: 20px;
+    display: none;
+}
+
+.msg-js.show {
+    display: block;
+}

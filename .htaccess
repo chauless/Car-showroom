@@ -1,0 +1,8 @@
+#401 Авторизация не выполнена
+ErrorDocument 401 http://wa.toad.cz/~morenmat/project/index.php?error=401
+#403 Доступ запрещен
+ErrorDocument 403 http://wa.toad.cz/~morenmat/project/index.php?error=403
+#404 Страница не найдена
+ErrorDocument 404 http://wa.toad.cz/~morenmat/project/index.php?error=404
+#500 Внутренняя ошибка сервера
+ErrorDocument 500 http://wa.toad.cz/~morenmat/project/index.php?error=500

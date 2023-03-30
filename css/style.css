@@ -1,0 +1,195 @@
+html {
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+/*              */
+
+
+
+body {
+	margin: 0;
+	font-family: 'Lexend', sans-serif;
+	min-width: 900px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #800000;
+}
+
+
+.ads {
+	padding-left: 150px;
+	padding-right: 150px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	color: black;
+	font-weight: 300;
+	font-size: 26px;
+
+}
+
+.ads a:hover {
+	color: #DB3727;
+}
+
+.ads img {
+	border: 2px solid #000000;
+}
+
+.ads p {
+	margin-top: 10px;
+}
+
+.ads a {
+	color: black;
+}
+
+.ad img {
+	width: 110%;
+	height: 110%;
+	max-height: 400px ;
+	max-width: 300px;
+	object-fit: cover;
+}
+
+.ad {
+	font-weight: bold;
+	margin-top: 60px;
+	width: 300px;
+	height: 600px;
+	overflow: hidden;
+}
+
+.find {
+	display: flex;
+	justify-content: center;
+	font-weight: 400;
+	font-size: 26px;
+	line-height: 32px;
+	color: white;
+	padding: 10px;
+	background: #0C78ED;
+	border-radius: 15px;
+}
+
+.button {
+	margin-left: 34%;
+	margin-right: 35%;
+}
+
+.main {
+	max-width: 400px;
+}
+
+.icon {
+	width: 30px;
+	height: 30px;
+}
+
+.docs {
+	font-size: 30px;
+	padding-top: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.doc {
+	margin: 20px;
+}
+
+@media print {
+	.ads {
+		width: auto;
+		height: auto;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: row;
+	}
+	.photo {
+		width: 350px;
+		height: 350px;
+	}
+}
+
+@media screen and (max-width: 1545px) {
+	.ad img {
+		width: 110%;
+		height: 110%;
+		max-height: 200px ;
+		max-width: 200px;
+	}
+	.ad {
+		margin-top: 60px;
+		width: 200px;
+		height: 400px;
+		overflow: hidden;
+	}
+}
+
+@media screen and (max-width: 1240px) {
+	.ad, .find {
+		font-size: 18px;
+	}
+	.login, .reg {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	.ads{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.ad {
+		height: 300px;
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 780px) {
+	.ads {
+		align-items: center;
+	}
+	body {
+		min-width: 100px;
+	}
+	.photo {
+		max-width: 90%;
+	}
+	.button {
+		width: 250px;
+		font-size: 16px;
+		margin-left: 90px;
+	}
+}
+
